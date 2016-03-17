@@ -412,6 +412,9 @@ var PageTransitions = (function () {
 
                 // Next page to be animated.
                 var $nextPage = $pages.eq(currentPageIndex).addClass('pt-page-current');
+                
+                $currentPage.addClass('pt-animating');
+                $nextPage.addClass('pt-animating');
 
                 $currentPage.addClass(outClass).on(animEndEventName, function() {
                     $currentPage.off(animEndEventName);
