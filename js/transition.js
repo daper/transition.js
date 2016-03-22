@@ -461,6 +461,7 @@ var PageTransitions = (function () {
 
     return {
         init : init,
+        resetPage: resetPage,
     };
 
 })();
